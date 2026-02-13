@@ -1,0 +1,87 @@
+{
+  "nested_cv_results": {
+    "accuracy": {
+      "mean": 0.9318354222658819,
+      "std": 0.004312382867930343,
+      "per_fold": [
+        0.9375812743823146,
+        0.9271465741543798,
+        0.9271465741543798,
+        0.9358196010407632,
+        0.9314830875975716
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.8185240462964734,
+      "std": 0.01793819533697889,
+      "per_fold": [
+        0.8347967542726392,
+        0.7984564607891569,
+        0.8382928480223525,
+        0.8250800652896632,
+        0.7959941031085548
+      ]
+    },
+    "mcc": {
+      "mean": 0.8844606338135279,
+      "std": 0.007310465458682649,
+      "per_fold": [
+        0.8942357702455995,
+        0.8768596290922545,
+        0.8763838232932039,
+        0.8913635731682539,
+        0.883460373268328
+      ]
+    }
+  },
+  "best_hparams_per_fold": [
+    {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    },
+    {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    },
+    {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    },
+    {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    },
+    {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    }
+  ],
+  "model_info": {
+    "esm_model": "ESM-2 650M (1280-D)",
+    "prost_model": "ProstT5 (1024-D)",
+    "architecture": "full",
+    "fusion": "BidirectionalCrossAttention",
+    "sequence_encoder": "BiLSTM",
+    "pooling": "MultiHeadAttentionPooling",
+    "partitioning": "GraphPart 30% identity"
+  },
+  "comparison": {
+    "deeplocpro": {
+      "f1": 0.8,
+      "mcc": 0.86
+    },
+    "our_gated_fusion": {
+      "f1": 0.76,
+      "mcc": 0.82
+    },
+    "our_improved": {
+      "f1": 0.8185240462964734,
+      "mcc": 0.8844606338135279
+    }
+  }
+}

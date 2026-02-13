@@ -1,0 +1,62 @@
+
+Hello everyone,
+
+Here is a link to get the slides and the two papers we talked about:
+https://filesender.renater.fr/?s=download&token=dd8384e8-023f-4469-87de-1ed36b6fe6ed
+
+You are expected to form groups of two students and choose one of the following topics:
+
+    Peptide toxicity prediction <-- ce projet on le regarde pas on ne l'utilise pas jamais 
+
+    Protein subcellular localization <-- c'est ceux projet qu'il faut faire
+
+The objective of the project is to carefully study the corresponding article and re-implement the proposed method using protein language model (pLM) embeddings, while designing a different deep learning architecture from the one used in the paper.
+
+You must use both embeddings:
+
+    ESM-C
+
+    ProstT5 3Di
+
+You should use the same input dataset as in the original paper, but all other components (model architecture, training procedure, evaluation pipeline) must be implemented from scratch by your group.
+
+
+We also include in the link a related project from our team, where the same two embeddings were used for a different downstream task. The corresponding paper is provided, and the code is available on GitHub and Colab. You may consult it for inspiration and implementation ideas.
+
+
+
+For the final report, you are expected to:
+
+    Clearly describe your model architecture and design choices
+
+    Explain how and why you combined the two embeddings
+
+    Present and analyze your results
+
+    Compare your performance with that reported in the original paper, using the same benchmark and evaluation metrics
+
+    Discuss possible reasons why your results are better, similar, or worse
+
+The main objectives of this project are to:
+
+    Make well-justified and explainable methodological choices
+
+    Avoid data leakage
+
+    Properly handle class imbalance
+
+Do not hesitate to contact me if you have any questions.
+
+The deadline for the project is February 13th by the end of the day.
+
+Best regards,
+Yasaman KARAMI
+
+--------------------------------------------
+Yasaman Karami
+Chargée de recherche INRIA
+Centre INRIA de l'Université de Lorraine
+615 Rue du Jardin Botanique
+54600 Villers-Lès-Nancy, France
+
+git GitHub: utilisable : https://github.com/evolutionaryscale/esm

@@ -1,0 +1,136 @@
+{
+  "start_time": "2026-01-26T09:32:38.902275",
+  "total_folds": 5,
+  "model_type": "full",
+  "status": "completed",
+  "folds": {
+    "fold_2": {
+      "start_time": "2026-01-26T14:34:08.526535",
+      "status": "completed",
+      "phase": "training",
+      "current": 42,
+      "total": 50,
+      "progress_pct": 84.0,
+      "details": "Epoch 42/50",
+      "last_update": "2026-02-03T23:46:21.018989",
+      "metrics": {
+        "test_acc": 0.9271,
+        "test_f1": 0.8383,
+        "test_mcc": 0.8764
+      },
+      "end_time": "2026-02-03T23:50:04.501871"
+    },
+    "fold_1": {
+      "start_time": "2026-01-26T14:34:44.311329",
+      "status": "completed",
+      "phase": "training",
+      "current": 32,
+      "total": 50,
+      "progress_pct": 64.0,
+      "details": "Epoch 32/50",
+      "last_update": "2026-02-02T05:16:22.421576",
+      "metrics": {
+        "test_acc": 0.9271,
+        "test_f1": 0.7985,
+        "test_mcc": 0.8769
+      },
+      "end_time": "2026-02-02T05:21:31.542817"
+    },
+    "fold_0": {
+      "start_time": "2026-01-26T14:35:32.020264",
+      "status": "completed",
+      "phase": "training",
+      "current": 38,
+      "total": 50,
+      "progress_pct": 76.0,
+      "details": "Epoch 38/50",
+      "last_update": "2026-02-03T13:18:55.525442",
+      "metrics": {
+        "test_acc": 0.9376,
+        "test_f1": 0.8348,
+        "test_mcc": 0.8942
+      },
+      "end_time": "2026-02-03T13:22:59.670448"
+    },
+    "fold_3": {
+      "start_time": "2026-01-26T14:48:28.451930",
+      "status": "completed",
+      "phase": "training",
+      "current": 50,
+      "total": 50,
+      "progress_pct": 100.0,
+      "details": "Epoch 50/50",
+      "last_update": "2026-02-05T01:12:37.097328",
+      "metrics": {
+        "test_acc": 0.9358,
+        "test_f1": 0.8251,
+        "test_mcc": 0.8914
+      },
+      "end_time": "2026-02-05T01:16:15.481051"
+    },
+    "fold_4": {
+      "start_time": "2026-01-26T14:48:43.977697",
+      "status": "completed",
+      "phase": "training",
+      "current": 36,
+      "total": 50,
+      "progress_pct": 72.0,
+      "details": "Epoch 36/50",
+      "last_update": "2026-02-03T04:54:57.420630",
+      "metrics": {
+        "test_acc": 0.9315,
+        "test_f1": 0.796,
+        "test_mcc": 0.8835
+      },
+      "end_time": "2026-02-03T05:00:04.998490"
+    }
+  },
+  "completed_folds": 5,
+  "overall_progress_pct": 100.0,
+  "config": {
+    "num_parallel_folds": 5,
+    "threads_per_fold": 9,
+    "num_epochs": 50,
+    "hparams": {
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "dropout": 0.2
+    }
+  },
+  "end_time": "2026-02-05T01:16:15.790074",
+  "final_summary": {
+    "accuracy": {
+      "mean": 0.9318354222658819,
+      "std": 0.004312382867930343,
+      "per_fold": [
+        0.9375812743823146,
+        0.9271465741543798,
+        0.9271465741543798,
+        0.9358196010407632,
+        0.9314830875975716
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.8185240462964734,
+      "std": 0.01793819533697889,
+      "per_fold": [
+        0.8347967542726392,
+        0.7984564607891569,
+        0.8382928480223525,
+        0.8250800652896632,
+        0.7959941031085548
+      ]
+    },
+    "mcc": {
+      "mean": 0.8844606338135279,
+      "std": 0.007310465458682649,
+      "per_fold": [
+        0.8942357702455995,
+        0.8768596290922545,
+        0.8763838232932039,
+        0.8913635731682539,
+        0.883460373268328
+      ]
+    }
+  }
+}
